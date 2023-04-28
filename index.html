@@ -1,59 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>B.DGTL - Sua agência de marketing digital</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<header>
-		<h1>B.DGTL</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Sobre nós</a></li>
-				<li><a href="#">Serviços</a></li>
-				<li><a href="#">Contato</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="banner">
-			<h2>Sua agência de marketing digital</h2>
-			<p>Alcançando seus objetivos de marketing digital com soluções personalizadas.</p>
-			<a href="#" class="btn">Entre em contato</a>
-		</section>
-		<section id="services">
-			<h3>Nossos serviços</h3>
-			<div class="service">
-				<img src="https://via.placeholder.com/150" alt="Criação de sites responsivos">
-				<h4>Criação de sites responsivos</h4>
-				<p>Criamos sites otimizados para SEO e adaptados a qualquer dispositivo.</p>
-			</div>
-			<div class="service">
-				<img src="https://via.placeholder.com/150" alt="Gestão de campanhas de publicidade online">
-				<h4>Gestão de campanhas de publicidade online</h4>
-				<p>Gerenciamos campanhas de publicidade online em diversas plataformas.</p>
-			</div>
-			<div class="service">
-				<img src="https://via.placeholder.com/150" alt="Criação de conteúdo para blogs, redes sociais e e-mail marketing">
-				<h4>Criação de conteúdo para blogs, redes sociais e e-mail marketing</h4>
-				<p>Criamos conteúdo relevante e engajador para aumentar o alcance de sua marca.</p>
-			</div>
-			<div class="service">
-				<img src="https://via.placeholder.com/150" alt="Análise de dados e monitoramento de métricas">
-				<h4>Análise de dados e monitoramento de métricas</h4>
-				<p>Analisamos dados e monitoramos métricas para melhorar o desempenho das campanhas.</p>
-			</div>
-			<div class="service">
-				<img src="https://via.placeholder.com/150" alt="Consultoria em marketing digital">
-				<h4>Consultoria em marketing digital</h4>
-				<p>Oferecemos consultoria em marketing digital para ajudar sua empresa a crescer online.</p>
-			</div>
-		</section>
-		<section id="contact">
-			<h3>Entre em contato</h3>
-			<form>
-				<label for="name">Nome:</label>
-				<input type="text" id="name" name="name
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B.DGTL - Sua agência de marketing digital</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
+    header {
+      background-color: black;
+      color: yellow;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: yellow;
+      text-decoration: none;
+      padding: 0 1rem;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://i.imgur.com/3o8q3qF.jpg');
+      background-size: cover;
+      background-position: center;
+      height: calc(100vh - 4rem);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    .hero-btn {
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      background-color: yellow;
+      color: black;
+      border: none;
+      border-radius: 2rem;
+      margin-top: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      transition: background-color 0.2s;
+    }
+    .hero-btn:hover {
+      background-color: #e6e600;
+      color: white;
+    }
+    .content {
+      padding: 2rem;
+      text-align: center;
+    }
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .cta-btn {
+      font-size: 1.25rem;
+      padding: 0.75rem 1.5rem;
+      background-color: yellow;
+      color: black;
+      border: none;
+      border-radius: 2rem;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      transition: background-color 0.2s;
+    }
+    .cta-btn:hover {
+      background-color: #e6e600;
+      color: white;
+    }
+    .contact {
+      background-color: black;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .form-input {
+      display: block;
+      margin-bottom: 1rem;
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: #333;
+      color: white;
+      font-size: 1rem;
+    }
+    .form-input:focus {
+      outline: none;
+
